@@ -1,0 +1,23 @@
+@mixin container-n($w) {
+    .container {
+        max-width: $w;
+    }
+}
+
+@include xxl {
+    @include container-n($xl)
+}
+
+@include xl {
+    @include container-n($md)
+}
+
+@include md {
+    @include container-n($sm)
+}
+@include sm {
+    @include container-n($xs)
+}
+@include xs {
+    @include container-n(100%)
+}

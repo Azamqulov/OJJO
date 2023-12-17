@@ -1,0 +1,71 @@
+@import '../components/_mixsin.scss';
+@import '../components/_vars.scss';
+
+.footter_box {
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include sm{
+            justify-content: center;
+            // text-align: center;
+        }
+        // gap: 30px;
+        .blog_text {
+            width: 300px;
+
+            @include xxl {
+                width: 270px;
+            }
+
+            @include xl {
+                width: 200px;
+            }
+
+            h1 {
+                border-bottom: 1px solid black;
+                padding: 20px 0;
+
+                @include xl {
+                    font-size: 19px;
+                }
+            }
+
+            ul {
+                padding-top: 30px;
+
+                li {
+                    line-height: 1.7;
+
+                    @include xl {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include md{
+            justify-content: center;
+            text-align: center;
+        }
+        h4 {
+            width: 280px;
+            padding: 10px 0;
+
+            @include xl {
+                font-size: 19px;
+            }
+
+        }
+    }
+}

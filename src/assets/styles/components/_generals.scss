@@ -1,0 +1,14 @@
+
+// ---------
+body{
+    color: $dark;
+    font-size: $foot-size;
+    font-family: $foot-family;
+    font-weight: $foot-wight;
+}
+.container{
+    width: 100%;
+    max-width: $xxl;
+    margin: 0 auto;
+    padding: 20px 0;
+}

@@ -1,0 +1,110 @@
+@import '../../components/_mixsin.scss';
+@import '../../components/_vars.scss';
+
+
+.event {
+    padding: 100px 0 120px;
+
+    .container {
+        margin: 0 auto;
+        .event_btn {
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .btn_item {
+                width: 165px;
+                height: 65px;
+                font-size: 18px;
+                border: 1px solid #d6d6d6;
+                background: none;
+                position: relative;
+                transform: translate(-6px, -6px);
+
+                &:hover {
+                    height: 65px;
+
+                    span {
+                        color: $white;
+                        background-color: $dark;
+                    }
+                }
+
+                &.active {
+                    height: 65px;
+
+                    span {
+                        color: $white;
+                        background-color: $dark;
+                    }
+
+                    &::before{
+                         border: none;
+                         transform: translate(0);
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 99;
+                    display: flex;
+                    background-color: #f9f9f9;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #d6d6d6;
+                    transform: translate(6px, 6px);
+                }
+            }
+        }
+        // 
+        .event-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+            flex-wrap: wrap;
+
+            .wrapper{
+                width: 350px;
+                height: 280px;
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                h3{
+                    position: relative;
+                    color: $white;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

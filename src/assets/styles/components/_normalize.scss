@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // transition: linear 0.5s;
+
+    &::after,&::before{
+        box-sizing: border-box;
+    }
+}
+
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+input, select ,option ,textarea, button{
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
