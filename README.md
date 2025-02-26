@@ -1,4 +1,4 @@
-# 14-dars
+# OJJO
 
 ## Project setup
 ```
